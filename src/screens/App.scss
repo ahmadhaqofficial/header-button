@@ -1,0 +1,36 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+}
+#root {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.hearder__logo {
+  height: 50px;
+  width: 50px;
+}
+.home__joumbotron {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  padding: 2em;
+}
+.header__buttons {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 1em;
+  margin-right: 1em;
+}
