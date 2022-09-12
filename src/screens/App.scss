@@ -15,58 +15,98 @@ body {
   overflow-x: hidden;
   overflow-y: hidden;
 }
+.img__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 .hearder__logo {
-  height: 50px;
-  width: 50px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  width: 200px;
 }
 .home__joumbotron {
-  display: flex;
-  justify-content: space-between;
   height: 100%;
   width: 100%;
   padding: 2em;
+}
+.navbar__main {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1920px;
+  margin: 0 auto;
+  align-items: center;
+  padding-top: 2em;
+}
+.header__button {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  align-items: center;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 .header__buttons {
   text-decoration: none;
   color: black;
   font-size: 20px;
-  font-weight: 600;
+  align-items: center;
   margin-left: 1em;
   margin-right: 1em;
-  padding: 0.5em;
-  border-radius: 20px;
 }
-.header__buttons:hover {
-  background-color: #189366;
-  color: white;
-  transition: all 0.5s ease-in-out;
+.english__button {
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  padding: 0.5em;
+}
+.header__button:hover {
+  color: #ed6244;
+  transition: all 0.3s ease-in-out;
 }
 .ibt__contant__nav {
   display: none;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1510px) {
   .ibt__contant__nav {
     display: flex;
-    background-color: #189366;
+    background-color: #ed6244;
     border: 1px solid transparent;
     align-items: center;
     margin: 0;
+    height: 35px;
     border-radius: 5px;
   }
+  .home__joumbotron {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .img__container {
+    display: unset;
+    align-items: center;
+  }
+
   .navbar__main {
-    top: 5em;
+    top: 7.5em;
     right: 0;
     display: flex;
     flex-direction: column !important;
     justify-content: center;
     align-items: center;
     position: absolute;
-    height: 330px;
+    height: fit-content;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.7);
   }
+  .header__button {
+    margin-bottom: 1em;
+    color: white;
+  }
   .header__buttons {
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
+  }
+  .header__buttons svg {
     color: white;
   }
 }
