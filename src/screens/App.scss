@@ -16,33 +16,32 @@ body {
   overflow-y: hidden;
 }
 .img__container {
-  width: 100%;
   display: flex;
   justify-content: center;
 }
 .hearder__logo {
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  width: 200px;
+  height: 80px;
+  width: 83px;
 }
 .home__joumbotron {
   height: 100%;
   width: 100%;
   padding: 2em;
+  display: flex;
+  justify-content: space-between;
 }
 .navbar__main {
   display: flex;
   justify-content: space-around;
-  max-width: 1920px;
+
   margin: 0 auto;
+  height: 100%;
+  width: 100%;
   align-items: center;
-  padding-top: 2em;
 }
 .header__button {
   text-decoration: none;
   color: black;
-  font-size: 20px;
   align-items: center;
   margin-left: 1em;
   margin-right: 1em;
@@ -50,15 +49,23 @@ body {
 .header__buttons {
   text-decoration: none;
   color: black;
-  font-size: 20px;
   align-items: center;
   margin-left: 1em;
   margin-right: 1em;
 }
-.english__button {
-  background-color: #f5f5f5;
+.header__button__contact{
+  text-decoration: none;
+  color: white;
+  background-color: #884AFF;
+  padding: 8px;
+  padding-left:11px;
+  width: 125px;
+
+  padding-right: 11px;
+  align-items: center;
+  margin-left: 1em;
+  margin-right: 1em;
   border-radius: 5px;
-  padding: 0.5em;
 }
 .header__button:hover {
   color: #ed6244;
@@ -70,12 +77,13 @@ body {
 @media (max-width: 1510px) {
   .ibt__contant__nav {
     display: flex;
-    background-color: #ed6244;
+    background-color: #884AFF;
     border: 1px solid transparent;
     align-items: center;
     margin: 0;
     height: 35px;
     border-radius: 5px;
+    
   }
   .home__joumbotron {
     display: flex;
@@ -88,16 +96,19 @@ body {
   }
 
   .navbar__main {
-    top: 7.5em;
+    top: 6em;
     right: 0;
+    padding: 1em;
     display: flex;
     flex-direction: column !important;
     justify-content: center;
     align-items: center;
     position: absolute;
     height: fit-content;
-    width: 100%;
+    width: 20%;
     background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    margin-right: 20px;
   }
   .header__button {
     margin-bottom: 1em;

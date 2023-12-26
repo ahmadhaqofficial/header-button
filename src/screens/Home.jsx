@@ -9,7 +9,7 @@ export default function Home() {
   const [isScrolling, setScrolling] = React.useState(false);
 
   function checkSize() {
-    if (window.innerWidth < 1510) {
+    if (window.innerWidth < 1000) {
       setMenuOpen(false);
     } else {
       setMenuOpen(true);
@@ -40,58 +40,31 @@ export default function Home() {
         {menuOpen ? (
           <OutsideClickHandler
             onOutsideClick={() => {
-              if (window.innerWidth < 1510) {
+              if (window.innerWidth < 1000) {
                 setMenuOpen(false);
               }
             }}
           >
             <div className="navbar__main">
-              <a className="header__buttons english__button" href="Home">
-                English
+              <a className="header__buttons header__button" href="About ">
+              About
               </a>
-              <a className="header__buttons" href="Services">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="feather feather-search"
-                >
-                  <circle cx="11" cy="11" r="8"></circle>
-                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                </svg>
+              <a className="header__buttons header__button" href="Features">
+              Features
               </a>
-              <a className="header__buttons header__button" href="About us">
-                Home
+              <a className="header__buttons header__button" href="Pricing">
+              Pricing
               </a>
-              <a className="header__buttons header__button" href="Blogs">
-                Things to Do
+              <a className="header__buttons header__button" href="Gallery">
+              Gallery
               </a>
-              <a className="header__buttons header__button" href="Contact us">
-                Directories
+              <a className="header__buttons header__button" href="Team">
+              Team
               </a>
-              <a className="header__buttons header__button" href="Contact us">
-                Living in Doha
+              <a className="header__buttons header__button__contact" href="Contact us">
+                Contact us
               </a>
-              <a className="header__buttons header__button" href="Contact us">
-                Jobs in Doha
-              </a>
-              <a className="header__buttons header__button" href="Contact us">
-                Healthy Living
-              </a>
-              <a className="header__buttons header__button" href="Contact us">
-                Family Matters
-              </a>
-              <a className="header__buttons header__button" href="Contact us">
-                Blog
-              </a>
-              <a className="header__buttons header__button" href="Contact us">
-                Contests
-              </a>
+             
             </div>
           </OutsideClickHandler>
         ) : null}
@@ -109,8 +82,7 @@ export default function Home() {
           )}
         </button>
       </div>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, nisi
-      eligendi excepturi accusamus sequi! Recusandae, doloremque.
+     
     </>
   );
 }
