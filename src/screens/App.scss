@@ -19,7 +19,7 @@ body {
   display: flex;
   justify-content: center;
 }
-.hearder__logo {
+.header__logo {
   height: 80px;
   width: 83px;
 }
@@ -68,14 +68,14 @@ body {
   border-radius: 5px;
 }
 .header__button:hover {
-  color: #ed6244;
+  color: #884AFF;
   transition: all 0.3s ease-in-out;
 }
-.ibt__contant__nav {
+.ibt__content__nav {
   display: none;
 }
 @media (max-width: 1510px) {
-  .ibt__contant__nav {
+  .ibt__content__nav {
     display: flex;
     background-color: #884AFF;
     border: 1px solid transparent;
@@ -120,4 +120,47 @@ body {
   .header__buttons svg {
     color: white;
   }
+}
+.nav__left__content{
+ font-size: 70px;
+ font-weight: bolder;
+}
+.span__class{
+  color: #884AFF;
+}
+.nav__main__both__sides{
+  padding: 2em;
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+.navbar__content__main__left{
+  height: 50;
+  width: 50%;
+}
+
+.navbar__content__main__right__img{
+  height: 450px;
+  width: 450px;
+}
+.nav__left__sub__content{
+  margin-top: 3em;
+  font-size: 18px;
+}
+.nav__left__button{
+  margin-top: 3em;
+}
+.nav__content__button{
+  background-color: #884AFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: .5em;
+  width: 200px;
+  font-size: 20px;
+}
+.nav__content__button:hover{
+  cursor: pointer;
 }

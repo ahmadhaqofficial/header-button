@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.scss";
 import Logo from "../assets/logo.png";
+import Logo2 from "../assets/logo2.png";
 import { useLayoutEffect } from "react";
 import OutsideClickHandler from "react-outside-click-handler";
 
@@ -9,7 +10,7 @@ export default function Home() {
   const [isScrolling, setScrolling] = React.useState(false);
 
   function checkSize() {
-    if (window.innerWidth < 1000) {
+    if (window.innerWidth < 1500) {
       setMenuOpen(false);
     } else {
       setMenuOpen(true);
@@ -34,13 +35,13 @@ export default function Home() {
       <div className="home__joumbotron">
         <div className="img__container">
           {" "}
-          <img className="hearder__logo" src={Logo} alt="" />
+          <img className="header__logo" src={Logo} alt="" />
         </div>
 
         {menuOpen ? (
           <OutsideClickHandler
             onOutsideClick={() => {
-              if (window.innerWidth < 1000) {
+              if (window.innerWidth < 1500) {
                 setMenuOpen(false);
               }
             }}
@@ -69,7 +70,7 @@ export default function Home() {
           </OutsideClickHandler>
         ) : null}
         <button
-          className="ibt__contant__nav"
+          className="ibt__content__nav"
           onClick={() => {
             setMenuOpen(!menuOpen);
           }}
@@ -83,6 +84,24 @@ export default function Home() {
         </button>
       </div>
      
+
+      <div className='navbar__content__main'>
+        <div className="nav__main__both__sides">
+        <div className='navbar__content__main__left'>
+          
+                <div className="nav__left__content">Fastest Delivery & <span className="span__class"><br />Easy Pickup</span> </div>
+                <div className="nav__left__sub__content">
+    Welcome to the ultimate convenience in mobile dining. Our app brings a world of flavors right to your fingertips, allowing you to browse menus, customize your orders, and enjoy quick, hassle-free delivery. Whether you're craving a gourmet burger, a fresh salad, or an exotic dish, satisfying your appetite has never been easier or more delightful.
+    </div>
+    <div className="nav__left__button"><button className="nav__content__button">Download app</button></div>
+                </div>
+        <div className="navbar__content__main__right">
+          <img className="navbar__content__main__right__img" src={Logo2} alt="" />
+        </div>
+        </div>
+      
+    </div>
+   
     </>
   );
 }
