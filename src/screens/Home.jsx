@@ -1,14 +1,16 @@
 import React from "react";
 import "./App.scss";
+import "./Explain.jsx";
+import "./Start.jsx";
+import Half from "../assets/half.png";
 import Logo from "../assets/logo.png";
-import Logo2 from "../assets/logo2.png";
-import Download from "../assets/download.png";
-import Store from "../assets/store.png";
-import Arrow from "../assets/arrow.png";
-import Pizza from "../assets/menu.png";
-import Apple from "../assets/apple.png";
+
+
+
 import { useLayoutEffect } from "react";
 import OutsideClickHandler from "react-outside-click-handler";
+import Explain from "./Explain.jsx";
+import Start from "./Start.jsx";
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = React.useState(true);
@@ -88,68 +90,10 @@ export default function Home() {
           )}
         </button>
       </div>
-     
+<Explain/>
 
-      <div className='navbar__content__main'>
-        <div className="nav__main__both__sides">
-        <div className='navbar__content__main__left'>
-          
-                <div className="nav__left__content">Fastest Delivery & <span className="span__class"><br />Easy Pickup</span> </div>
-                <div className="nav__left__sub__content">
-    Welcome to the ultimate convenience in mobile dining.
-     Our app brings a world of flavors right to your 
-     fingertips, allowing you to browse menus, customize 
-     your orders, and enjoy quick, hassle-free delivery.
-      Whether you're craving a gourmet burger, a fresh 
-      salad, or an exotic dish, satisfying your appetite 
-      has never been easier or more delightful.
-    </div>
-    <div className="nav__left__button"><button className="nav__content__button">Download app</button></div>
-                </div>
-        <div className="navbar__content__main__right">
-          <img className="navbar__content__main__right__img" src={Logo2} alt="" />
-        </div>
-        </div>
-      
-    </div>
-   <div className="menu__main__container">
-    <div className="menu__left__container">
-     <div className="menu__content__left">
-     <img className="download__img" src={Download} alt="" />
-      <div className="menu__contents__container">
-      
-      Hello Menu is available <br /> for your android or <br /> Apple.
-      
-      </div>
-      <div className="menu__download__buttons">
-        <div className="store__container">
-          <img className="store__img" src={Store} alt="" />
-          <div className="store__content">
-            Get it on <br /><span>Play store</span>
 
-          </div>
-        </div>
-        <div className="Apple__container">
-          <img className="apple_img" src={Apple} alt="" />
-          <div className="Apple__content">
-              Download on <br /> <span className="play__store__content">Play store
-</span>
-          </div>
-        </div>
-      </div>
-     </div>
-     
-    </div>
-    <div className="arrow__img__container">
-      <img className="arrow__img" src={Arrow} alt="" />
-
-      </div>
-    <div className="menu__right__container">
-<img className="pizza__img" src={Pizza} alt="" />
-
-    </div>
-   </div>
-
+<Start/>
    <div className="card__heading__container">
 <div className="cards__heading__content">
   More Than 10,000 Dishes to orders!
@@ -161,7 +105,10 @@ export default function Home() {
    </div>
    <div className="cards__container">
     <div className="cards__img">
-      <img src={Store} alt="" />
+      <img className="half__slice_pizza" src={Half} alt="" />
+    </div>
+    <div className="cards__content">
+      Pizza
     </div>
    </div>
     </>

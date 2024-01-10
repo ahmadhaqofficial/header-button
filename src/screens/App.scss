@@ -276,3 +276,26 @@ body {
   text-align: center;
   margin-top: 2em;
 }
+.cards__container{
+  background-color: #D8C3FF;
+  height: 200px;
+  width: 70px;
+  align-items: center;
+
+  border-radius: 10px;
+  padding: 1em;
+}
+.half__slice_pizza{
+  width: 50px;
+  height: 50px;
+ 
+}
+.cards__img{
+  background-color: white;
+  border-radius: 50px;
+  width: fit-content;
+  height: fit-content;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
