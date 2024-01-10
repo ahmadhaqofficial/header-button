@@ -15,7 +15,7 @@ export default function Home() {
   const [isScrolling, setScrolling] = React.useState(false);
 
   function checkSize() {
-    if (window.innerWidth < 1500) {
+    if (window.innerWidth < 1510) {
       setMenuOpen(false);
     } else {
       setMenuOpen(true);
@@ -46,7 +46,7 @@ export default function Home() {
         {menuOpen ? (
           <OutsideClickHandler
             onOutsideClick={() => {
-              if (window.innerWidth < 1500) {
+              if (window.innerWidth < 1510) {
                 setMenuOpen(false);
               }
             }}
@@ -96,7 +96,13 @@ export default function Home() {
           
                 <div className="nav__left__content">Fastest Delivery & <span className="span__class"><br />Easy Pickup</span> </div>
                 <div className="nav__left__sub__content">
-    Welcome to the ultimate convenience in mobile dining. Our app brings a world of flavors right to your fingertips, allowing you to browse menus, customize your orders, and enjoy quick, hassle-free delivery. Whether you're craving a gourmet burger, a fresh salad, or an exotic dish, satisfying your appetite has never been easier or more delightful.
+    Welcome to the ultimate convenience in mobile dining.
+     Our app brings a world of flavors right to your 
+     fingertips, allowing you to browse menus, customize 
+     your orders, and enjoy quick, hassle-free delivery.
+      Whether you're craving a gourmet burger, a fresh 
+      salad, or an exotic dish, satisfying your appetite 
+      has never been easier or more delightful.
     </div>
     <div className="nav__left__button"><button className="nav__content__button">Download app</button></div>
                 </div>
@@ -115,7 +121,7 @@ export default function Home() {
       Hello Menu is available <br /> for your android or <br /> Apple.
       
       </div>
-      <div>
+      <div className="menu__download__buttons">
         <div className="store__container">
           <img className="store__img" src={Store} alt="" />
           <div className="store__content">
@@ -124,9 +130,9 @@ export default function Home() {
           </div>
         </div>
         <div className="Apple__container">
-          <img src={Apple} alt="" />
+          <img className="apple_img" src={Apple} alt="" />
           <div className="Apple__content">
-            Get it on <br /> <span className="play__store__content">Play store
+              Download on <br /> <span className="play__store__content">Play store
 </span>
           </div>
         </div>
@@ -141,6 +147,21 @@ export default function Home() {
     <div className="menu__right__container">
 <img className="pizza__img" src={Pizza} alt="" />
 
+    </div>
+   </div>
+
+   <div className="card__heading__container">
+<div className="cards__heading__content">
+  More Than 10,000 Dishes to orders!
+</div>
+<div className="cards__heading__sub__content">
+  lorem ipsum dolor sit , consectetur elite, some people are so bad that they are almost  <br /> sed do  incident ut lab et color magna liquid.
+
+</div>
+   </div>
+   <div className="cards__container">
+    <div className="cards__img">
+      <img src={Store} alt="" />
     </div>
    </div>
     </>

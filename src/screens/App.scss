@@ -147,7 +147,7 @@ body {
 }
 .nav__left__sub__content{
   margin-top: 3em;
-  font-size: 18px;
+  font-size: 15px;
 }
 .nav__left__button{
   margin-top: 3em;
@@ -175,8 +175,8 @@ body {
 .menu__main__container .arrow__img__container{
   align-items: center;
   display: flex;
-  padding-left: 2em;
   width: 20%;
+  margin-right: 3em;
 }
 .download__img{
   margin-bottom: 2em;
@@ -197,11 +197,15 @@ body {
   width: 50%;
 }
 .store__container{
+  cursor: pointer;
+}
+.store__container{
   background-color: #884AFF;
   width: fit-content;
   color: white;
   display: flex;
   padding: .5em;
+  border-radius: 3px;
 }
 .store__content{
   margin-left: 1em;
@@ -209,7 +213,66 @@ body {
 .store__img{
   width: 30px;
   height: 30px;
+  
+
+}
+.pizza__img{
+  width: 500px;
+}
+.arrow__img{
+  width: 300px;
+}
+.store__content{
+  font-size: 10px;
+}
+.store__content span{
+  font-size: 15px;
+}
+.Apple__container{
+  background-color: black;
+  width: fit-content;
+  color: white;
+  display: flex;
+  padding: .5em;
+  border-radius: 3px;
+}
+.Apple__container:hover{
+  cursor: pointer;
+
+}
+.apple_img{
+  width: 30px;
+  height: 30px;
+}
+.Apple__content{
+  margin-left: 1em;
+}
+.Apple__content span{
+  font-size: 15px;
 }
 .Apple__content{
   font-size: 10px;
+}
+.menu__download__buttons{
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin-top: 2em;
+}
+.cards__heading__content{
+  width: 100%;
+  align-items: center;
+  font-size:40px ;
+  font-weight: bold;
+  justify-content: center;
+  display: flex;
+}
+.cards__heading__sub__content{
+  width: 100%;
+  align-items: center;
+  font-size:15px ;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  margin-top: 2em;
 }
