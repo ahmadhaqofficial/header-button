@@ -164,3 +164,52 @@ body {
 .nav__content__button:hover{
   cursor: pointer;
 }
+.menu__main__container{
+  padding: 2em;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  
+
+}
+.menu__main__container .arrow__img__container{
+  align-items: center;
+  display: flex;
+  padding-left: 2em;
+  width: 20%;
+}
+.download__img{
+  margin-bottom: 2em;
+}
+.menu__contents__container{
+  font-size: 45px;
+  font-weight: bold;
+ 
+}
+.menu__contents__container{
+  display: flex;
+}
+.menu__left__container{
+
+  width: 50%;
+}
+.menu__right__container{
+  width: 50%;
+}
+.store__container{
+  background-color: #884AFF;
+  width: fit-content;
+  color: white;
+  display: flex;
+  padding: .5em;
+}
+.store__content{
+  margin-left: 1em;
+}
+.store__img{
+  width: 30px;
+  height: 30px;
+}
+.Apple__content{
+  font-size: 10px;
+}
