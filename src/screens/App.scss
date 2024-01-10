@@ -276,14 +276,20 @@ body {
   text-align: center;
   margin-top: 2em;
 }
-.cards__container{
-  background-color: #D8C3FF;
-  height: 200px;
-  width: 70px;
-  align-items: center;
-
+.cards__first__container{
   border-radius: 10px;
   padding: 1em;
+  margin-left: 1em;
+  background-color: #D8C3FF;
+  height: 170px;
+  width: 130px;
+}
+.cards__container{
+ 
+  align-items: center;
+display: flex;
+justify-content: center;
+  
 }
 .half__slice_pizza{
   width: 50px;
@@ -293,9 +299,20 @@ body {
 .cards__img{
   background-color: white;
   border-radius: 50px;
-  width: fit-content;
-  height: fit-content;
+  width: 85px;
+  height: 85px;
   align-items: center;
   display: flex;
   justify-content: center;
+}
+.cards__content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5em;
+
+}
+.cards__main{
+  display: flex;
+padding: 2em;
 }

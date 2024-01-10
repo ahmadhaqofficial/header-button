@@ -2,7 +2,7 @@ import React from "react";
 import "./App.scss";
 import "./Explain.jsx";
 import "./Start.jsx";
-import Half from "../assets/half.png";
+import "./Cards.jsx"
 import Logo from "../assets/logo.png";
 
 
@@ -11,6 +11,7 @@ import { useLayoutEffect } from "react";
 import OutsideClickHandler from "react-outside-click-handler";
 import Explain from "./Explain.jsx";
 import Start from "./Start.jsx";
+import Cards from "./Cards.jsx";
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = React.useState(true);
@@ -94,23 +95,7 @@ export default function Home() {
 
 
 <Start/>
-   <div className="card__heading__container">
-<div className="cards__heading__content">
-  More Than 10,000 Dishes to orders!
-</div>
-<div className="cards__heading__sub__content">
-  lorem ipsum dolor sit , consectetur elite, some people are so bad that they are almost  <br /> sed do  incident ut lab et color magna liquid.
-
-</div>
-   </div>
-   <div className="cards__container">
-    <div className="cards__img">
-      <img className="half__slice_pizza" src={Half} alt="" />
-    </div>
-    <div className="cards__content">
-      Pizza
-    </div>
-   </div>
+<Cards/>
     </>
   );
 }
