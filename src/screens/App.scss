@@ -367,18 +367,23 @@ margin: 0 auto;
 }
 .description__about__menu__img__crispy__zinger{
   width: 320px;
+  
 }
 .description__about__menu__crispy__back__ground__main{
   background-color: #884AFF;
+  margin-left: 12em;
+  border-radius: 45px;
 
 }
+
+
 .description__about__menu__crispy__back__ground{
   width: 100%;
   display: flex;
   justify-content: space-around;
 }
 .description__about__menu__content__crispy__margin{
-  margin: 0;
+ 
   color: white;
 }
 .sub__title__decorations{
@@ -389,4 +394,12 @@ margin: 0 auto;
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+.Our__testimonial__container__left__side__content{
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: .5em;
+}
+.Our__testimonial__container{
+  padding: 2em;
 }

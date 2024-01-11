@@ -3,9 +3,7 @@ import "./App.scss";
 import "./Explain.jsx";
 import "./Start.jsx";
 import "./Cards.jsx";
-import Palate from "../assets/bigpalate.png";
-import zinger from "../assets/zinger.png";
-import Crispy from "../assets/zingerloaded.png"
+import "./Description.jsx";
 import Logo from "../assets/logo.png";
 
 
@@ -15,6 +13,7 @@ import OutsideClickHandler from "react-outside-click-handler";
 import Explain from "./Explain.jsx";
 import Start from "./Start.jsx";
 import Cards from "./Cards.jsx";
+import Description from "./Description.jsx";
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = React.useState(true);
@@ -97,52 +96,23 @@ export default function Home() {
 <Explain/>
 <Start/>
 <Cards/>
-
-<div className="description__about__menu">
-  <div className="description__about__menu__img__container">
-    <img className="description__about__menu__img" src={Palate} alt="" />
-  </div>
-<div className="description__about__menu__content">
-<div className="description__about__menu__title">
-Living well beings with <br /> eating well.
-</div>
-<div className="description__about__menu__sub__title">
-“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br /> incididunt ut labore et dolore magna aliqua.”Whether you're craving a gourmet burger, <br /> a fresh salad, or an exotic dish, satisfying your appetite has never been easier or <br/> more delightful.</div>
-</div>
-</div>
+<Description/>
 
 
-<div className="description__about__menu__main">
-<div className="description__about__menu  description__about__menu__back__ground">
-<div className="description__about__menu__content description__about__menu__content__margin">
-<div className="description__about__menu__title">
-Living well beings with <br /> eating well.
-</div>
-<div className="description__about__menu__sub__title">
-“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br /> incididunt ut labore et dolore magna aliqua.”Whether you're craving a gourmet burger, <br /> a fresh salad, or an exotic dish, satisfying your appetite has never been easier or <br/> more delightful.</div>
-</div>
-<div className="description__about__menu__img__container">
-    <img className="description__about__menu__img zinger__img" src={zinger} alt="" />
-  </div>
-</div>
+<div className="Our__testimonial__container">
+  <div className="Our__testimonial__container__left__side">
+    <div className="Our__testimonial__container__left__side__content">
+    Our <br /> testimonial
+    </div>
+    <div className="Our__testimonial__container__left__side__sub__content">
+    Lorem ipsum dolor sit amet, consectetur adipiscing <br /> elit, sed do eiusmod tempor incididunt ut labore et <br /> dolore magna aliqua.
+
+    </div>
+    </div>
 </div>
 
 
 
-<div className="description__about__menu__crispy__back__ground__main">
-<div className="description__about__menu description__about__menu__crispy__back__ground">
-  <div className="description__about__menu__img__container">
-    <img className="description__about__menu__img description__about__menu__img__crispy__zinger" src={Crispy} alt="" />
-  </div>
-<div className="description__about__menu__content description__about__menu__content__crispy__margin">
-<div className="description__about__menu__title title__decorations">
-Our Food
-</div>
-<div className="description__about__menu__sub__title sub__title__decorations">
-Welcome to the ultimate convenience in mobile dining. Our app brings a world of flavors right <br /> to your fingertips, allowing you to browse menus, customize your orders, and enjoy quick, <br /> hassle-free delivery. Whether you're craving a gourmet burger, a fresh salad, or an exotic dish, <br />  satisfying your appetite has never been easier or more delightful.</div>
-</div>
-</div>
-</div>
     </>
   );
 }
