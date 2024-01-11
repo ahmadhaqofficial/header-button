@@ -104,11 +104,11 @@ export default function Home() {
 Living well beings with <br /> eating well.
 </div>
 <div className="description__about__menu__sub__title">
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum voluptates illum est fuga, enim ea cupiditate temporibus minima numquam suscipit magnam tenetur voluptate quo consectetur ipsa quia. Perspiciatis, inventore nulla!
+“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br /> incididunt ut labore et dolore magna aliqua.”Whether you're craving a gourmet burger, <br /> a fresh salad, or an exotic dish, satisfying your appetite has never been easier or <br/> more delightful.</div>
 </div>
 </div>
 
-</div>
+
     </>
   );
 }

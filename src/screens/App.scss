@@ -51,6 +51,7 @@ body {
   color: black;
   align-items: center;
   margin-left: 1em;
+  font-weight: 500;
   margin-right: 1em;
 }
 .header__button__contact{
@@ -319,8 +320,9 @@ padding: 2em;
 .description__about__menu{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
-  margin: 2em;
+  padding: 2em;
 }
 .description__about__menu__img__container{
   width: 60%;
@@ -329,13 +331,17 @@ padding: 2em;
   width: 100%;
 }
 .description__about__menu__title{
-  font-size:40px ;
+  font-size:50px ;
   font-weight: bold;
-  margin-bottom: 1em;
+  margin-bottom: .5em;
 }
 .description__about__menu__content{
   width: 100%;
   align-items: center;
   height: 100%;
+  margin-left: 4em;
   
+}
+.description__about__menu__sub__title{
+  font-size: 15px;
 }
