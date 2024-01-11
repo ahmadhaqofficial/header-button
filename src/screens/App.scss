@@ -33,7 +33,6 @@ body {
 .navbar__main {
   display: flex;
   justify-content: space-around;
-
   margin: 0 auto;
   height: 100%;
   width: 100%;
@@ -140,6 +139,7 @@ body {
 .navbar__content__main__left{
   height: 50;
   width: 50%;
+  max-width: 1440px;
 }
 
 .navbar__content__main__right__img{
@@ -342,6 +342,37 @@ padding: 2em;
   margin-left: 4em;
   
 }
+.description__about__menu__content__margin{
+  margin: 0;
+}
 .description__about__menu__sub__title{
   font-size: 15px;
+}
+.zinger__img{
+  width: 400px;
+}
+.description__about__menu__back__ground{
+  background-color: #FAF7FF;
+}
+.description__about__menu__img__crispy__zinger{
+  width: 320px;
+}
+.description__about__menu__crispy__back__ground{
+  background-color: #884AFF;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.description__about__menu__content__crispy__margin{
+  margin: 0;
+  color: white;
+}
+.sub__title__decorations{
+  text-align:center ;
+}
+.title__decorations{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
