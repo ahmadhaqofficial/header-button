@@ -2,7 +2,8 @@ import React from "react";
 import "./App.scss";
 import "./Explain.jsx";
 import "./Start.jsx";
-import "./Cards.jsx"
+import "./Cards.jsx";
+import Palate from "../assets/bigpalate.png";
 import Logo from "../assets/logo.png";
 
 
@@ -92,10 +93,22 @@ export default function Home() {
         </button>
       </div>
 <Explain/>
-
-
 <Start/>
 <Cards/>
+<div className="description__about__menu">
+  <div className="description__about__menu__img__container">
+    <img className="description__about__menu__img" src={Palate} alt="" />
+  </div>
+<div className="description__about__menu__content">
+<div className="description__about__menu__title">
+Living well beings with <br /> eating well.
+</div>
+<div className="description__about__menu__sub__title">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum voluptates illum est fuga, enim ea cupiditate temporibus minima numquam suscipit magnam tenetur voluptate quo consectetur ipsa quia. Perspiciatis, inventore nulla!
+</div>
+</div>
+
+</div>
     </>
   );
 }
