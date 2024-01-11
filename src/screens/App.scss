@@ -26,6 +26,8 @@ body {
 .home__joumbotron {
   height: 100%;
   width: 100%;
+  max-width: 1440px;
+  margin: 0 auto !important;
   padding: 2em;
   display: flex;
   justify-content: space-between;
@@ -136,10 +138,13 @@ body {
   height: 100%;
   width: 100%;
 }
+.navbar__content__main{
+  max-width: 1440px;
+  margin:  0 auto;
+}
 .navbar__content__main__left{
   height: 50;
   width: 50%;
-  max-width: 1440px;
 }
 
 .navbar__content__main__right__img{
@@ -169,6 +174,8 @@ body {
   padding: 2em;
   display: flex;
   width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
   justify-content: space-between;
   
 
@@ -316,6 +323,11 @@ justify-content: center;
 .cards__main{
   display: flex;
 padding: 2em;
+max-width: 1440px;
+margin: 0 auto;
+}
+.description__about__menu__main{
+  background-color: #FAF7FF;
 }
 .description__about__menu{
   display: flex;
@@ -323,6 +335,8 @@ padding: 2em;
   align-items: center;
   width: 100%;
   padding: 2em;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .description__about__menu__img__container{
   width: 60%;
@@ -351,14 +365,14 @@ padding: 2em;
 .zinger__img{
   width: 400px;
 }
-.description__about__menu__back__ground{
-  background-color: #FAF7FF;
-}
 .description__about__menu__img__crispy__zinger{
   width: 320px;
 }
-.description__about__menu__crispy__back__ground{
+.description__about__menu__crispy__back__ground__main{
   background-color: #884AFF;
+
+}
+.description__about__menu__crispy__back__ground{
   width: 100%;
   display: flex;
   justify-content: space-around;
