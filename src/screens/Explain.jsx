@@ -17,7 +17,7 @@ Welcome to the ultimate convenience in mobile dining.
   salad, or an exotic dish, satisfying your appetite 
   has never been easier or more delightful.
 </div>
-<div className="nav__left__button"><button className="nav__content__button">Download app</button></div>
+<div className="nav__left__button"><button className="nav__content__button" > Download app</button></div>
             </div>
     <div className="navbar__content__main__right">
       <img className="navbar__content__main__right__img" src={Logo2} alt="" />
