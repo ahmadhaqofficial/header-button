@@ -442,12 +442,27 @@ margin: 0 auto;
 .testimonial__review__container{
   display: flex;
 }
+.testimonial__review__stars svg{
+color: yellow;
+}
 .testimonial__review__name{
   margin-left: 1em;
 
+}
+.Footer__container{
+  position: relative;
+
+}
+.Footer__container__right{
+  position: absolute;
+  top: 0;
+  color : white;
 }
 .testimonial__review__name__user{
   font-size: 15px;
   font-weight: bold;
   margin-bottom: .3em;
+}
+.footer__content{
+  font-size: 15px;
 }
