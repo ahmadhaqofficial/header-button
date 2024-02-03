@@ -449,20 +449,41 @@ color: yellow;
   margin-left: 1em;
 
 }
-.Footer__container{
+.Footer__container__img{
   position: relative;
-
+width: 100%;
 }
-.Footer__container__right{
+.Footer__container__main{
   position: absolute;
   top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
   color : white;
+  margin-top: 2em;
+  padding: 2em;
 }
+
 .testimonial__review__name__user{
   font-size: 15px;
   font-weight: bold;
   margin-bottom: .3em;
 }
-.footer__content{
+.footer__content__img{
   font-size: 15px;
+  margin-top: 2em;
+}
+.svg__container{
+  display: flex;
+  margin-top: 2em;
+}
+.footer__content__bottom{
+  margin-top: 2em;
+}
+.Help__buttons{
+  margin-top: 1em;
+}
+@media (max-width: px) {
+ 
+  
 }
