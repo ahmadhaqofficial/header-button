@@ -10,13 +10,13 @@ const Cards = () => {
   return (
     <>
     <div className="card__heading__container">
-    <div className="cards__heading__content">
+  <div className='cards__heading__content__main'>  <div className="cards__heading__content">
       More Than 10,000 Dishes to orders!
     </div>
     <div className="cards__heading__sub__content">
       lorem ipsum dolor sit , consectetur elite, some people are so bad that they are almost  <br /> sed do  incident ut lab et color magna liquid.
     
-    </div>
+    </div></div>
        </div>
        <div className="cards__main">
        <div className="cards__first__container">

@@ -1,12 +1,33 @@
-import React from 'react';
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Pic from "../assets/pic.png";
 import Colon from "../assets/colon.png";
 import 'swiper/css';
+import React, { useState, useEffect } from 'react';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar'
 const Testimonial = () => {
+  const [slidesToShow, setSlidesToShow] = useState(3); // Default to 3 slides
+
+  useEffect(() => {
+    const handleResize = () => {
+      const newSlidesToShow = window.innerWidth < 430 ? 1.1: window.innerWidth < 505 ? 1.2: window.innerWidth < 580 ? 1.5: window.innerWidth < 650 ? 1.8: window.innerWidth < 700 ? 2: window.innerWidth < 800 ? 2.2: window.innerWidth < 900 ? 2.5 : window.innerWidth < 1000 ? 3 : 3;
+      setSlidesToShow(newSlidesToShow);
+    };
+
+    // Listen to window resize events
+    window.addEventListener('resize', handleResize);
+
+    // Initial setup
+    handleResize();
+
+    // Clean up the event listener
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+
+
   return (
    <div className='Our__testimonial__container__main'>
 
@@ -26,7 +47,7 @@ const Testimonial = () => {
 <div className="our__testimonial__container__right__side">
 <Swiper
       spaceBetween={10}
-      slidesPerView={3}
+      slidesPerView={slidesToShow}
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
     >
@@ -50,7 +71,7 @@ const Testimonial = () => {
   <div className="testimonial__review__name__user">Ali Hassan</div>
   <div className="testimonial__review__stars">
 <svg stroke="currentColor" fill="currentColor"
- stroke-width="0" viewBox="0 0 576 512" height="1em" width="1em" >
+ stroke-width="0" viewBox="0 0 576 512" height=".5em" width=".5em" >
   <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7
    36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 
    439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 

@@ -18,28 +18,20 @@ import Footer from "./Footer.jsx";
 import Testimonial from "./Testimonial.jsx";
 
 export default function Home() {
-  const [menuOpen, setMenuOpen] = React.useState(true);
+  const [menuOpenShow, setMenuOpenShow] = React.useState(false);
   const [isScrolling, setScrolling] = React.useState(false);
 
   function checkSize() {
-    if (window.innerWidth < 1510) {
-      setMenuOpen(false);
+    if (window.innerWidth < 950) {
+      setMenuOpenShow(false);
     } else {
-      setMenuOpen(true);
+      setMenuOpenShow(true);
     }
   }
 
   useLayoutEffect(() => {
     checkSize();
     window.addEventListener("resize", checkSize);
-    window.addEventListener("scroll", () => {
-       setMenuOpen(false);
-      if (window.scrollY > 0) {
-        setScrolling(true);
-      } else {
-        setScrolling(false);
-      }
-    });
   }, []);
 
   return (
@@ -50,11 +42,11 @@ export default function Home() {
           <img className="header__logo" src={Logo} alt="" />
         </div>
 
-        {menuOpen ? (
+        {menuOpenShow ? (
           <OutsideClickHandler
             onOutsideClick={() => {
-              if (window.innerWidth < 1510) {
-                setMenuOpen(false);
+              if (window.innerWidth < 950) {
+                setMenuOpenShow(false);
               }
             }}
           >
@@ -84,11 +76,11 @@ export default function Home() {
         <button
           className="ibt__content__nav"
           onClick={() => {
-            setMenuOpen(!menuOpen);
+            setMenuOpenShow(!menuOpenShow);
           }}
           title="Menu"
         >
-          {menuOpen ? (
+          {menuOpenShow ? (
             <Close size={20} color="White" />
           ) : (
             <Menu size={20} color="White" />
