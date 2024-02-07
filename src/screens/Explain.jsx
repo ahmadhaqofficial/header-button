@@ -20,14 +20,15 @@ Welcome to the ultimate convenience in mobile dining.
 <div className="nav__left__button">
   <button className="nav__content__button" > Download app</button></div>
             </div>
-            <div className='navbar__content__main__center'>
+            
+    <div className="navbar__content__main__right">
+    <div className='navbar__content__main__center'>
               <button className='dish__button'>Dishes</button>
               <button className='snacks__button'>Snackes</button>
               <button className='drinks__button'>Drinks</button>
               <button className='platter__button'>Platter</button>
               <button className='vegetables__button'>Vegetables</button>
             </div>
-    <div className="navbar__content__main__right">
       <img className="navbar__content__main__right__img" src={Logo2} alt="" />
     </div>
     </div>

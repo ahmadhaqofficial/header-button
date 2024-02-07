@@ -30,16 +30,16 @@ export default function Home() {
   }
 
   useLayoutEffect(() => {
-    // checkSize();
-    // window.addEventListener("resize", checkSize);
-    // window.addEventListener("scroll", () => {
-    //    setMenuOpen(false);
-    //   if (window.scrollY > 0) {
-    //     setScrolling(true);
-    //   } else {
-    //     setScrolling(false);
-    //   }
-    // });
+    checkSize();
+    window.addEventListener("resize", checkSize);
+    window.addEventListener("scroll", () => {
+       setMenuOpen(false);
+      if (window.scrollY > 0) {
+        setScrolling(true);
+      } else {
+        setScrolling(false);
+      }
+    });
   }, []);
 
   return (
@@ -52,11 +52,11 @@ export default function Home() {
 
         {menuOpen ? (
           <OutsideClickHandler
-            // onOutsideClick={() => {
-            //   if (window.innerWidth < 1510) {
-            //     setMenuOpen(false);
-            //   }
-            // }}
+            onOutsideClick={() => {
+              if (window.innerWidth < 1510) {
+                setMenuOpen(false);
+              }
+            }}
           >
             <div className="navbar__main">
               <a className="header__buttons header__button" href="About ">
