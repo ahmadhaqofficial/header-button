@@ -12,8 +12,7 @@ body {
   font-family: "Inter", sans-serif;
 }
 #root {
-  overflow-x: hidden;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 .img__container {
   display: flex;
@@ -55,12 +54,12 @@ body {
   font-weight: 500;
   margin-right: 1em;
 }
-.header__button__contact{
+.header__button__contact {
   text-decoration: none;
   color: white;
-  background-color: #884AFF;
+  background-color: #884aff;
   padding: 8px;
-  padding-left:11px;
+  padding-left: 11px;
   width: 125px;
 
   padding-right: 11px;
@@ -70,7 +69,7 @@ body {
   border-radius: 5px;
 }
 .header__button:hover {
-  color: #884AFF;
+  color: #884aff;
   transition: all 0.3s ease-in-out;
 }
 .ibt__content__nav {
@@ -79,14 +78,13 @@ body {
 @media (max-width: 949px) {
   .ibt__content__nav {
     display: flex;
-    background-color: #884AFF;
+    background-color: #884aff;
     border: 1px solid transparent;
     align-items: center;
     margin: 0;
-   
+
     height: 35px;
     border-radius: 5px;
-    
   }
   .home__joumbotron {
     display: flex;
@@ -125,14 +123,14 @@ body {
     color: white;
   }
 }
-.nav__left__content{
- font-size: 70px;
- font-weight: bolder;
+.nav__left__content {
+  font-size: 70px;
+  font-weight: bolder;
 }
-.span__class{
-  color: #884AFF;
+.span__class {
+  color: #884aff;
 }
-.nav__main__both__sides{
+.nav__main__both__sides {
   padding: 2em;
   margin-top: 1em;
   display: flex;
@@ -140,228 +138,220 @@ body {
   height: 100%;
   width: 100%;
 }
-.navbar__content__main{
+.navbar__content__main {
   max-width: 1440px;
-  margin:  0 auto;
+  margin: 0 auto;
 }
-.navbar__content__main__left{
+.navbar__content__main__left {
   height: 50;
   width: 50%;
 }
-.navbar__content__main__right{
+.navbar__content__main__right {
   position: relative;
 }
-.navbar__content__main__center{
+.navbar__content__main__center {
   position: absolute;
- right: 78%;
- z-index: 1;
+  right: 78%;
+  z-index: 1;
 }
-.navbar__content__main__right__img{
+.navbar__content__main__right__img {
   height: 450px;
   width: 450px;
 }
-.nav__left__sub__content{
+.nav__left__sub__content {
   margin-top: 3em;
   font-size: 15px;
 }
-.nav__left__button{
+.nav__left__button {
   margin-top: 3em;
 }
-.navbar__content__main__center{
+.navbar__content__main__center {
   width: 50%;
   display: flex;
   flex-direction: column;
 
   align-items: center;
 }
-.dish__button{
+.dish__button {
   width: 100px;
-  cursor: pointer;
 }
-.snacks__button{
+.snacks__button {
   width: 110px;
-  cursor: pointer;
 }
-.drinks__button{
+.drinks__button {
   width: 100px;
   cursor: pointer;
 }
-.platter__button{
+.platter__button {
   width: 120px;
   cursor: pointer;
 }
-.vegetables__button{
+.dish__button,
+.snacks__button {
+  cursor: pointer;
+}
+.vegetables__button {
   width: 130px;
 }
-.navbar__content__main__center button{
+.navbar__content__main__center button {
   margin-top: 3em;
-  background-color: #884AFF;
+  background-color: #884aff;
   color: white;
   border: none;
   border-radius: 5px;
-  padding: .5em;
-  
+  padding: 0.5em;
+
   font-size: 15px;
 }
-.nav__content__button{
-  background-color: #884AFF;
+.nav__content__button {
+  background-color: #884aff;
   color: white;
   border: none;
   border-radius: 5px;
-  padding: .5em;
+  padding: 0.5em;
   width: 200px;
   font-size: 20px;
 }
-.nav__content__button:hover{
+.nav__content__button:hover {
   cursor: pointer;
 }
-.menu__main__container{
+.menu__main__container {
   padding: 2em;
   display: flex;
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
   justify-content: space-between;
-  
-
 }
-.menu__main__container .arrow__img__container{
+.menu__main__container .arrow__img__container {
   align-items: center;
   display: flex;
   width: 20%;
   margin-right: 3em;
 }
-.download__img{
+.download__img {
   margin-bottom: 2em;
 }
-.menu__contents__container{
+.menu__contents__container {
   font-size: 45px;
   font-weight: bold;
- 
 }
-.menu__contents__container{
+.menu__contents__container {
   display: flex;
 }
-.menu__left__container{
-
+.menu__left__container {
   width: 50%;
 }
-.menu__right__container{
+.menu__right__container {
   width: 50%;
 }
-.store__container{
+.store__container {
   cursor: pointer;
 }
-.store__container{
-  background-color: #884AFF;
+.store__container {
+  background-color: #884aff;
   width: fit-content;
   color: white;
   display: flex;
-  padding: .5em;
+  padding: 0.5em;
   border-radius: 3px;
 }
-.store__content{
+.store__content {
   margin-left: 1em;
 }
-.store__img{
+.store__img {
   width: 30px;
   height: 30px;
-  
-
 }
-.pizza__img{
+.pizza__img {
   width: 500px;
 }
-.arrow__img{
+.arrow__img {
   width: 300px;
 }
-.store__content{
+.store__content {
   font-size: 10px;
 }
-.store__content span{
+.store__content span {
   font-size: 15px;
 }
-.Apple__container{
+.Apple__container {
   background-color: black;
   width: fit-content;
   color: white;
   display: flex;
-  padding: .5em;
+  padding: 0.5em;
   border-radius: 3px;
 }
-.Apple__container:hover{
+.Apple__container:hover {
   cursor: pointer;
-
 }
-.apple_img{
+.apple_img {
   width: 30px;
   height: 30px;
 }
-.Apple__content{
+.Apple__content {
   margin-left: 1em;
 }
-.Apple__content span{
+.Apple__content span {
   font-size: 15px;
 }
-.Apple__content{
+.Apple__content {
   font-size: 10px;
 }
-.menu__download__buttons{
+.menu__download__buttons {
   display: flex;
   justify-content: space-between;
   width: 50%;
   margin-top: 2em;
 }
-.cards__heading__content__main{
+.cards__heading__content__main {
   padding: 2em;
   padding-bottom: 0;
   padding-top: 0;
 }
-.cards__heading__content{
+.cards__heading__content {
   width: 100%;
   align-items: center;
-  font-size:40px ;
+  font-size: 40px;
   font-weight: bold;
   justify-content: center;
   display: flex;
 }
-.cards__heading__sub__content{
+.cards__heading__sub__content {
   width: 100%;
   align-items: center;
-  font-size:15px ;
+  font-size: 15px;
   justify-content: center;
   display: flex;
   text-align: center;
   margin-top: 2em;
 }
-.cards__first__container{
+.cards__first__container {
   border-radius: 15px;
   padding: 1em;
   margin-left: 1em;
-  background-color: #D8C3FF;
+  background-color: #d8c3ff;
   height: 170px;
   width: 130px;
 }
-.cards__first__container:hover{
+.cards__first__container:hover {
   cursor: pointer;
 
   transition: 0.4s ease-in;
-  background-color: #884AFF;
+  background-color: #884aff;
   color: white;
 }
-.cards__container{
- 
+.cards__container {
   align-items: center;
-display: flex;
-justify-content: center;
-  
+  display: flex;
+  justify-content: center;
 }
-.half__slice_pizza{
+.half__slice_pizza {
   width: 50px;
   height: 50px;
- 
 }
-.cards__img{
+.cards__img {
   background-color: white;
   border-radius: 50px;
   width: 85px;
@@ -370,24 +360,23 @@ justify-content: center;
   display: flex;
   justify-content: center;
 }
-.cards__content{
+.cards__content {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 1.5em;
-  font-weight:500;
-
+  font-weight: 500;
 }
-.cards__main{
+.cards__main {
   display: flex;
-padding: 2em;
-max-width: 1440px;
-margin: 0 auto;
+  padding: 2em;
+  max-width: 1440px;
+  margin: 0 auto;
 }
-.description__about__menu__main{
-  background-color: #FAF7FF;
+.description__about__menu__main {
+  background-color: #faf7ff;
 }
-.description__about__menu{
+.description__about__menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -396,198 +385,187 @@ margin: 0 auto;
   max-width: 1440px;
   margin: 0 auto;
 }
-.description__about__menu__img__container{
+.description__about__menu__img__container {
   width: 60%;
 }
-.description__about__menu__img{
+.description__about__menu__img {
   width: 450px;
 }
-.description__about__menu__title{
-  font-size:50px ;
+.description__about__menu__title {
+  font-size: 50px;
   font-weight: bold;
   width: 100%;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
-.description__about__menu__content{
+.description__about__menu__content {
   width: 100%;
   align-items: center;
   height: 100%;
   margin-left: 4em;
-  
 }
-.description__about__menu__content__margin{
+.description__about__menu__content__margin {
   margin: 0;
 }
-.description__about__menu__sub__title{
+.description__about__menu__sub__title {
   font-size: 15px;
   width: fit-content;
 }
-.zinger__img{
+.zinger__img {
   width: 400px;
 }
-.description__about__menu__img__crispy__zinger{
+.description__about__menu__img__crispy__zinger {
   width: 320px;
-  
 }
-.description__about__menu__crispy__back__ground__main{
-  background-color: #884AFF;
+.description__about__menu__crispy__back__ground__main {
+  background-color: #884aff;
   margin-left: 12em;
   border-radius: 45px;
-
 }
 
-
-.description__about__menu__crispy__back__ground{
+.description__about__menu__crispy__back__ground {
   width: 100%;
   display: flex;
   justify-content: space-around;
 }
-.description__about__menu__content__crispy__margin{
- 
+.description__about__menu__content__crispy__margin {
   color: white;
 }
-.sub__title__decorations{
-  text-align:center ;
+.sub__title__decorations {
+  text-align: center;
   width: fit-content;
 }
-.title__decorations{
+.title__decorations {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
-.Our__testimonial__container__left__side__content{
+.Our__testimonial__container__left__side__content {
   font-size: 45px;
   font-weight: bold;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
-.Our__testimonial__container__left__side__sub__content{
+.Our__testimonial__container__left__side__sub__content {
   width: fit-content;
 }
-.Our__testimonial__container__left__side{
+.Our__testimonial__container__left__side {
   width: 45%;
 }
-.our__testimonial__container__right__side{
+.our__testimonial__container__right__side {
   width: 65%;
 }
-.Our__testimonial__container__main{
- max-width: 1500px;
-   margin:auto 0 !important;
-   
-   width: 100%;
-   
+.Our__testimonial__container__main {
+  max-width: 1500px;
+  margin: auto 0 !important;
+
+  width: 100%;
 }
-.Our__testimonial__container{
+.Our__testimonial__container {
   padding: 2em;
   width: 100%;
   display: flex;
   justify-content: space-between;
-   align-items: center;
-  
+  align-items: center;
 }
-.testimonial__container__content{
+.testimonial__container__content {
   margin-top: 1em;
   margin-bottom: 2em;
   font-size: 12px;
   width: 240px;
 }
-.testimonial__container{
-  background-color: #FAF7FF;
+.testimonial__container {
+  background-color: #faf7ff;
   width: fit-content;
   height: fit-content;
   padding: 1em;
   border-radius: 30px;
 }
-.testimonial__review__container{
+.testimonial__review__container {
   display: flex;
 }
 
-.testimonial__review__stars svg{
-color: yellow;
+.testimonial__review__stars svg {
+  color: yellow;
 }
-.testimonial__review__name{
+.testimonial__review__name {
   margin-left: 1em;
-
 }
-.Footer__container__img{
-width: 100%;
-height: 100%;
-background: url('../assets/back.png');
+.Footer__container__img {
+  width: 100%;
+  height: 100%;
+  background: url("../assets/back.png");
 }
-.Footer__container__img__bg{
+.Footer__container__img__bg {
   width: 100%;
   min-height: 700px;
   object-fit: cover;
-
 }
-.Footer__container{
+.Footer__container {
   height: 100%;
   width: 100%;
 }
-.Footer__container__main{
-  
+.Footer__container__main {
   display: flex;
   justify-content: space-between;
-  color : white;
+  color: white;
   margin-top: 6em;
   padding: 2em;
 }
 
-.testimonial__review__name__user{
+.testimonial__review__name__user {
   font-size: 15px;
   font-weight: bold;
-  margin-bottom: .3em;
+  margin-bottom: 0.3em;
 }
-.footer__content__img{
+.footer__content__img {
   font-size: 15px;
   margin-top: 2em;
 }
-.svg__container{
+.svg__container {
   display: flex;
   margin-top: 2em;
 }
-.svg__container svg{
+.svg__container svg {
   margin-right: 1em;
 }
-.svg__container svg:hover{
-  color: #884AFF;
+.svg__container svg:hover {
+  color: #884aff;
   cursor: pointer;
   transition: scale 0.3s ease-in;
 }
-.footer__content{
+.footer__content {
   font-size: 15px;
 }
-.Footer__img__container{
+.Footer__img__container {
   margin-bottom: 1em;
 }
-.footer__content__bottom{
+.footer__content__bottom {
   margin-top: 2em;
   font-size: 15px;
 }
-.Help__buttons{
+.Help__buttons {
   margin-bottom: 1.5em;
 }
-.footer__content__bottom{
-
+.footer__content__bottom {
   margin-top: 4em;
 }
-.footer__content__two{
-   margin-top: 4em;
-   font-size: 15px;
+.footer__content__two {
+  margin-top: 4em;
+  font-size: 15px;
 }
-.Help__container__title{
+.Help__container__title {
   font-weight: bold;
   margin-bottom: 2em;
 }
-.Help__buttons{
+.Help__buttons {
   font-size: 15px;
 }
-.Help__buttons:hover{
-cursor: pointer;
-color: #884AFF;
-transition: scale 0.3s ease-in;
+.Help__buttons:hover {
+  cursor: pointer;
+  color: #884aff;
+  transition: scale 0.3s ease-in;
 }
-.footer__content__main{
+.footer__content__main {
   display: flex;
   color: white;
   width: 100%;
@@ -595,131 +573,116 @@ transition: scale 0.3s ease-in;
   justify-content: space-between;
 }
 @media (max-width: 1286px) {
-  
   .navbar__content__main__center {
-   
-  right: 75%;
-  
-}
-.menu__download__buttons{
-  width: fit-content;
-
-}
-.store__container{
-  margin-right: 1em;
-}
-.cards__main{
-  display: flex;
-  flex-wrap:wrap ;
-}
-.cards__first__container{
-  margin-top: 1em;
-}
-.our__testimonial__container__right__side{
-  width: 71%;
-}
+    right: 75%;
+  }
+  .menu__download__buttons {
+    width: fit-content;
+  }
+  .store__container {
+    margin-right: 1em;
+  }
+  .cards__main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .cards__first__container {
+    margin-top: 1em;
+  }
+  .our__testimonial__container__right__side {
+    width: 71%;
+  }
 }
 @media (max-width: 1230px) {
   .arrow__img {
     display: none;
-}
-.menu__main__container .arrow__img__container{
-  width: 0%;
-}
-.our__testimonial__container__right__side{
-  width: 75%;
-}
-
+  }
+  .menu__main__container .arrow__img__container {
+    width: 0%;
+  }
+  .our__testimonial__container__right__side {
+    width: 75%;
+  }
 }
 @media (max-width: 1170px) {
-  
   .our__testimonial__container__right__side {
-   
-    
     width: 78%;
-  
-}
+  }
 }
 
 @media (max-width: 1160px) {
-  
   .navbar__content__main__right__img {
-   
     height: 350px;
     width: 350px;
-  
+  }
+  .our__testimonial__container__right__side {
+    width: 80%;
+  }
 }
-.our__testimonial__container__right__side{
-  width: 80%;
-}
-}
-.navbar__content__main__center button{
-
+.navbar__content__main__center button {
   margin-top: 2em;
 }
 
-
 @media (max-width: 1160px) {
-  .navbar__content__main__center{
+  .navbar__content__main__center {
     right: 77%;
   }
-  .description__about__menu__title{
-font-size: 40px;
+  .description__about__menu__title {
+    font-size: 40px;
   }
-  .description__about__menu__crispy__back__ground__main{
+  .description__about__menu__crispy__back__ground__main {
     margin-left: 6em;
   }
-  .description__about__menu__img__crispy__zinger{
-width: 300px;
+  .description__about__menu__img__crispy__zinger {
+    width: 300px;
   }
 }
 @media (max-width: 1140px) {
-  .menu__main__container{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+  .menu__main__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  .menu__left__container{
+  .menu__left__container {
     width: 100%;
   }
 
-    .pizza__img{
-      width:595px ;
-    } 
-    .our__testimonial__container__right__side{
-      width: 85%;
-    }
+  .pizza__img {
+    width: 595px;
+  }
+  .our__testimonial__container__right__side {
+    width: 85%;
+  }
 }
 @media (max-width: 1080px) {
-  .zinger__img{
-   width: 300px;
+  .zinger__img {
+    width: 300px;
   }
-  .description__about__menu{
+  .description__about__menu {
     display: flex;
     flex-direction: column;
   }
-  .palate__responsive{
+  .palate__responsive {
     display: flex;
     flex-direction: column-reverse;
   }
-  .description__about__menu__content{
-margin-left: 0;
+  .description__about__menu__content {
+    margin-left: 0;
   }
-  .description__about__menu__img__container{
+  .description__about__menu__img__container {
     width: 100%;
     display: flex;
     justify-content: center;
   }
-  .description__about__menu__crispy__back__ground__main{
+  .description__about__menu__crispy__back__ground__main {
     margin-left: 2em;
   }
-  .Our__testimonial__container{
+  .Our__testimonial__container {
     display: flex;
     flex-direction: column;
   }
-  .our__testimonial__container__right__side{
+  .our__testimonial__container__right__side {
     width: 100%;
-  
   }
   .Our__testimonial__container__left__side {
     width: 90%;
@@ -727,80 +690,73 @@ margin-left: 0;
   }
 }
 @media (max-width: 980px) {
-  .nav__main__both__sides{
+  .nav__main__both__sides {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .navbar__content__main__left{
+  .navbar__content__main__left {
     width: 100%;
   }
-  .navbar__content__main__right{
-margin-top: 2em;
+  .navbar__content__main__right {
+    margin-top: 2em;
   }
 }
 @media (max-width: 950px) {
   .menu__download__buttons {
-   
     width: fit-content;
-      
-    }
-    .Footer__container__main{
-      display: flex;
-     flex-wrap: wrap;
-      
-    
-    }
+  }
+  .Footer__container__main {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
-
 
 @media (max-width: 890px) {
-    .menu__right__container{
-      width: 100%;
-    }
-    .Help__container{
-margin-top: 2em;
-    }
+  .menu__right__container {
+    width: 100%;
+  }
+  .Help__container {
+    margin-top: 2em;
+  }
 }
 @media (max-width: 785px) {
-    .menu__right__container{
-      width: 100%;
-    }
+  .menu__right__container {
+    width: 100%;
+  }
 }
 @media (max-width: 700px) {
   .menu__download__buttons {
-   
     width: fit-content;
-    }
-    .store__container{
-      margin-right: 1em;
-    }
-    .cards__heading__content{
-font-size: 35px;
-text-align: center;
-    }
+  }
+  .store__container {
+    margin-right: 1em;
+  }
+  .cards__heading__content {
+    font-size: 35px;
+    text-align: center;
+  }
 }
 @media (max-width: 650px) {
-  .pizza__img{
+  .pizza__img {
     width: 360px;
   }
-  .menu__contents__container{
+  .menu__contents__container {
     font-size: 35px;
   }
- 
 }
 @media (max-width: 500px) {
-  .navbar__content__main__right__img{
+  .navbar__content__main__right__img {
     width: 270px;
     height: 270px;
   }
-  .nav__left__content{
-font-size: 50px;
+  .nav__left__content {
+    font-size: 50px;
   }
   .description__about__menu__title {
-font-size: 32px;
+    font-size: 32px;
   }
-  .navbar__content__main__center button{
+  .navbar__content__main__center button {
     margin-top: 1.2em;
   }
   .dish__button {
@@ -809,25 +765,24 @@ font-size: 32px;
   .snacks__button {
     width: 75px;
   }
-  .drinks__button{
+  .drinks__button {
     width: 75px;
   }
-  .platter__button{
+  .platter__button {
     width: 75px;
   }
-  .vegetables__button{
+  .vegetables__button {
     width: 85px;
   }
 }
 @media (max-width: 450px) {
-  .palate__img{
+  .palate__img {
     width: 360px;
-   
   }
-  .description__about__menu__img__container{
-margin-top: 1em;
+  .description__about__menu__img__container {
+    margin-top: 1em;
   }
-  .zinger__img{
-width: 300px;
+  .zinger__img {
+    width: 300px;
   }
 }

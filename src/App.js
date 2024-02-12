@@ -1,12 +1,6 @@
-import {
-  BrowserRouter,
-  BrowserRouter as Router,
-  Route,
-  Routes,
-} from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./screens/Home.jsx";
 // import Main from "./screens/Main.jsx";
-
 
 function App() {
   return (
@@ -14,7 +8,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         {/* <Route path="/" element={<Main />} /> */}
-        
       </Routes>
     </BrowserRouter>
   );
