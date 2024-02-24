@@ -52,24 +52,26 @@ export default function Home() {
           >
             <div className="navbar__main">
               <a className="header__buttons header__button" href="About ">
-              About
+                About
               </a>
               <a className="header__buttons header__button" href="Features">
-              Features
+                Features
               </a>
               <a className="header__buttons header__button" href="Pricing">
-              Pricing
+                Pricing
               </a>
               <a className="header__buttons header__button" href="Gallery">
-              Gallery
+                Gallery
               </a>
               <a className="header__buttons header__button" href="Team">
-              Team
+                Team
               </a>
-              <a className="header__buttons header__button__contact" href="Contact us">
+              <a
+                className="header__buttons header__button__contact"
+                href="Contact us"
+              >
                 Contact us
               </a>
-             
             </div>
           </OutsideClickHandler>
         ) : null}
@@ -87,13 +89,13 @@ export default function Home() {
           )}
         </button>
       </div>
-<Explain/>
-<Start/>
-<Cards/>
-<Description/>
+      <Explain />
+      <Start />
+      <Cards />
+      <Description />
 
-<Testimonial/>
-    <Footer/>
+      <Testimonial />
+      <Footer />
     </>
   );
 }
